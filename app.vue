@@ -24,7 +24,6 @@ useHead({
         <NuxtPage />
       </NuxtLayout>
       <UNotifications />
-      <Background />
     </Body>
   </Html>
 </template>

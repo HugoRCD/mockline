@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="absolute inset-0 flex items-center justify-center -z-1">
+  <div class="absolute inset-0 flex items-center justify-center -z-10">
     <div class="circle circle-lg" />
     <div class="circle circle-md" />
     <div class="circle circle-sm" />

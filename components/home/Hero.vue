@@ -15,7 +15,8 @@
     </h1>
     <h2 class="mt-4 max-w-xl mx-auto text-center text-lg font-light text-black/60 dark:text-white/60" />
     <HomeCircleSystem />
-    <Countdown />
+    <Countdown class="z-10" />
+    <Background class="-z-1" />
   </div>
 </template>
 
