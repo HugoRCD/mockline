@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const { appName } = useAppConfig();
+const { appName } = useAppConfig()
 defineProps({
   isText: {
     type: Boolean,
-    default: false,
+    default: false
   },
   size: {
     type: Number,
-    default: 6,
-  },
-});
+    default: 6
+  }
+})
 </script>
 
 <template>
@@ -20,14 +20,14 @@ defineProps({
         :class="size ? 'h-' + size : 'h-6'"
         :src="'assets/hochard-logo-' + ($colorMode.value === 'light' ? 'dark' : 'light') + '.svg'"
         alt=""
-      />
+      >
       <img
         class="hidden w-auto lg:block"
         :class="size ? 'h-' + size : 'h-6'"
         :src="'assets/hochard-logo-' + ($colorMode.value === 'light' ? 'dark' : 'light') + '.svg'"
         alt=""
-      />
-      <span class="text-xs font-semibold ml-1" v-if="isText">{{ appName }}</span>
+      >
+      <span v-if="isText" class="text-xs font-semibold ml-1">{{ appName }}</span>
     </NuxtLink>
   </div>
 </template>

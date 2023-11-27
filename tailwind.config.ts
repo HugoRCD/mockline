@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
-import svgToDataUri from "mini-svg-data-uri";
-import plugin from "tailwindcss/plugin";
+import type { Config } from "tailwindcss"
+import svgToDataUri from "mini-svg-data-uri"
+import plugin from "tailwindcss/plugin"
 
 export default {
   darkMode: "class",
@@ -11,10 +11,13 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./app.vue",
-    "./error.vue",
+    "./error.vue"
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mockline: ["ES Rebond Grotesque TRIAL"]
+      },
       colors: {
         main: "var(--main-color)",
         muted: "var(--muted)",
@@ -22,17 +25,17 @@ export default {
         "text-color": "var(--text-color)",
         accent: "var(--accent)",
         "accent-hover": "var(--accent-hover)",
-        "accent-faded": "var(--accent-faded)",
+        "accent-faded": "var(--accent-faded)"
       },
       gradientColorStops: {
         "accent-main": "var(--accent-main)",
-        "accent-secondary": "var(--accent-secondary)",
+        "accent-secondary": "var(--accent-secondary)"
       },
       borderWidth: {
         sm: "1px",
-        md: "2px",
-      },
-    },
+        md: "2px"
+      }
+    }
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {
@@ -40,26 +43,26 @@ export default {
         {
           "bg-grid": (value: string) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke="${value}" fill="none"><path d="M64 0H0V64"/></svg>`,
-            )}")`,
-          }),
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke="${value}" fill="none"><path d="M64 0H0V64"/></svg>`
+            )}")`
+          })
         },
         {
           values: theme("backgroundColor"),
-          type: ["color"],
-        },
-      );
+          type: ["color"]
+        }
+      )
       matchUtilities(
         {
           "bg-grid": (value: string) => ({
-            backgroundSize: value,
-          }),
+            backgroundSize: value
+          })
         },
         {
           values: theme("spacing"),
-          type: ["number", "length", "any"],
-        },
-      );
-    }),
-  ],
-} satisfies Config;
+          type: ["number", "length", "any"]
+        }
+      )
+    })
+  ]
+} satisfies Config

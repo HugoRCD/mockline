@@ -2,9 +2,9 @@
 
 <template>
   <div class="absolute inset-0 flex items-center justify-center -z-1">
-    <div class="circle circle-lg"></div>
-    <div class="circle circle-md"></div>
-    <div class="circle circle-sm"></div>
+    <div class="circle circle-lg" />
+    <div class="circle circle-md" />
+    <div class="circle circle-sm" />
   </div>
 </template>
 

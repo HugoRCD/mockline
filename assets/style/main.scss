@@ -6,9 +6,14 @@
 @import "themes/dark";
 @import "themes/light";
 
-#__nuxt, #__layout {
-  height:100%!important;
-  width: 100%!important;
+#__nuxt, #__layout, html, body {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+@font-face {
+  font-family: "ES Rebond Grotesque TRIAL";
+  src: local("Grotesque"), url("/fonts/ESRebondGrotesqueTRIAL-Semibold.otf");
 }
 
 @layer components {
