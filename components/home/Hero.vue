@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="h-screen relative flex flex-col justify-center items-center">
+  <div class="h-screen relative flex flex-col justify-center items-center px-4 sm:px-8">
     <h1 class="text-center text-3xl font-light leading-tight lg:text-5xl">
       <SvgoMocklineLogo :font-controlled="false" class="w-16 h-16 lg:w-24 lg:h-24 mx-auto" />
       <span class="font-mockline font-medium text-4xl lg:text-6xl bg-gradient-to-br from-black/90 to-black/30 dark:from-white/90 dark:to-white/30 bg-clip-text text-transparent">

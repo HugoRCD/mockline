@@ -35,7 +35,7 @@ setInterval(updateCountdown, 1000)
 </script>
 
 <template>
-  <div class="flex gap-2 justify-center mt-8">
+  <div class="grid grid-cols-4 gap-4">
     <div v-for="item in timer" :key="item.name" class="countdown-item text-2xl font-bold flex flex-col">
       <span class="text-2xl">{{ item.value }}</span>
       <span class="time-text">
