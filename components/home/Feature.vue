@@ -50,11 +50,11 @@ const featuresItem = [
 
 <template>
   <div class="relative flex flex-col justify-center gap-8 px-4 sm:px-8 py-16">
-    <img
+<!--    <img
       alt="mockline logo"
       class="absolute inset-0 object-center opacity-70 h-64 sm:h-96 w-full py-8"
       src="/assets/fade-mockline-logo.svg"
-    >
+    >-->
     <div class="flex flex-col gap-1 text-center max-w-2xl mx-auto">
       <h4 class="text-lg font-light leading-tight lg:text-2xl">
         <span

@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     "nuxt-particles",
     "@nuxt/ui",
     "@nuxt/image",
-    "nuxt-svgo"
+    "nuxt-svgo",
+    "@vueuse/nuxt"
   ],
 
   colorMode: {
