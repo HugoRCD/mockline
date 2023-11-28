@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     "nuxt-particles",
     "@nuxt/ui",
     "@nuxt/image",
-    "@nuxtjs/eslint-module",
     "nuxt-svgo"
   ],
 
