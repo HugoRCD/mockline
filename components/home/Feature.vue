@@ -83,7 +83,7 @@ const featuresItem = [
     </div>
     <div class="flex flex-col gap-1 text-center max-w-2xl mx-auto mt-6 sm:mt-14">
       <video
-        src="/assets/announce-mockline.mp4"
+        src="/assets/presentation-mockline.mp4"
         autoplay
         loop
         muted

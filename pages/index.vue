@@ -64,7 +64,8 @@ const projects = [
           </NuxtLink>
         </div>
       </div>
-
+      <video src="/assets/promo-mockline.mp4" autoplay loop muted type="mov"
+             class="w-full max-w-3xl mx-auto rounded-xl shadow-xl"></video>
       <Footer/>
     </div>
   </div>
