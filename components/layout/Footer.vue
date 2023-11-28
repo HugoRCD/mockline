@@ -16,10 +16,6 @@
           - All rights reserved.
         </span>
       </div>
-      <div class="flex justify-center items-center gap-4 mt-2">
-        <ThemeSelector />
-        <ThemeToggle />
-      </div>
     </footer>
   </div>
 </template>
