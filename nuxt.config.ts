@@ -21,13 +21,6 @@ export default defineNuxtConfig({
     storageKey: "mockline-color-mode"
   },
 
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ["/sitemap.xml"]
-    }
-  },
-
   svgo: {
     autoImportPath: "./assets/logo/"
   },

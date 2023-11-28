@@ -19,7 +19,7 @@ useHead({
 
 <template>
   <Html lang="en">
-    <Body class="bg-white dark:bg-zinc-950">
+    <Body class="bg-white dark:bg-zinc-950 selection:bg-purple-500 selection:text-white">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>

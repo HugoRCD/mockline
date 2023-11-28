@@ -18,8 +18,10 @@ definePageMeta({
     <!-- Hero -->
     <HomeHero />
 
-    <Divider class="mt-8" />
+    <div class="bg-black z-20">
+      <Divider class="my-8" />
 
-    <HomeFeature />
+      <HomeFeature />
+    </div>
   </div>
 </template>

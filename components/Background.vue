@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Container } from "tsparticles-engine"
 
-// make a starry background
 const options = {
   fpsLimit: 60,
   particles: {
