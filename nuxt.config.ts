@@ -6,6 +6,11 @@ export default defineNuxtConfig({
     "nuxt-svgo",
   ],
   css: ["~/assets/main.scss"],
+  colorMode: {
+    preference: "dark",
+    fallback: "dark",
+    storageKey: "mockline-color-mode"
+  },
   svgo: {
     autoImportPath: "./assets/logo/"
   },
