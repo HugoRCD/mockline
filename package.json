@@ -11,7 +11,11 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.11.0",
     "nuxt": "^3.8.2",
+    "nuxt-particles": "^0.1.5",
+    "nuxt-svgo": "^3.7.0",
+    "sass": "^1.69.5",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   }
