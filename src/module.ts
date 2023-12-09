@@ -31,7 +31,7 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
     const runtimeDir = resolve('./runtime');
-    nuxt.options.css.push(resolve('./runtime/assets/main.scss'))
+    nuxt.options.css.push(resolve(runtimeDir, 'assets', 'main.scss'))
     await installModule('@nuxtjs/tailwindcss', {
       exposeConfig: true,
       config: {
