@@ -1,5 +1,5 @@
 import { defineNuxtModule, createResolver, installModule, addComponentsDir } from "@nuxt/kit";
-import { name, version } from '../package.json'
+import { name, version } from '../package.json';
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -7,6 +7,11 @@ export interface ModuleOptions {
    * @default 'M'
    */
   prefix?: string
+  /**
+   * Enable auto-import of all components
+   * @default true
+   */
+  injectComponents?: boolean
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -21,6 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {
     prefix: 'M',
+    injectComponents: true
   },
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
@@ -30,7 +36,6 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.build.transpile.push('sass')
 
     nuxt.options.css.push(resolve(runtimeDir, 'assets', 'main.css'));
-    nuxt.options.css.push(resolve(runtimeDir, 'assets', 'theme.css'));
     await installModule('@nuxtjs/color-mode', { classSuffix: '' })
     await installModule('@nuxtjs/tailwindcss', {
       exposeConfig: true,
@@ -44,10 +49,12 @@ export default defineNuxtModule<ModuleOptions>({
         }
       }
     })
-    await addComponentsDir({
-      path: resolve(runtimeDir, 'components', 'elements'),
-      prefix: "M",
-      watch: false
-    })
+    if (options.injectComponents) {
+      await addComponentsDir({
+        path: resolve(runtimeDir, 'components', 'elements'),
+        prefix: options.prefix,
+        watch: false
+      })
+    }
   }
 })
