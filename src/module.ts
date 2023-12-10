@@ -30,7 +30,7 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.build.transpile.push('sass')
 
     nuxt.options.css.push(resolve(runtimeDir, 'assets', 'main.css'));
-    nuxt.options.css.push(resolve(runtimeDir, 'assets', 'theme.scss'));
+    nuxt.options.css.push(resolve(runtimeDir, 'assets', 'theme.css'));
     await installModule('@nuxtjs/color-mode', { classSuffix: '' })
     await installModule('@nuxtjs/tailwindcss', {
       exposeConfig: true,
