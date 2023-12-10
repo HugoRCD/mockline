@@ -1,4 +1,16 @@
 
+## v0.0.4
+
+[compare changes](https://github.com/HugoRCD/mockline/compare/v0.0.3...v0.0.4)
+
+### 🏡 Chore
+
+- **release:** V0.0.3 ([cf10560](https://github.com/HugoRCD/mockline/commit/cf10560))
+
+### ❤️ Contributors
+
+- HugoRCD ([@HugoRCD](http://github.com/HugoRCD))
+
 ## v0.0.3
 
 [compare changes](https://github.com/HugoRCD/mockline/compare/v0.0.2...v0.0.3)
