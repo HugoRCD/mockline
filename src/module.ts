@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, installModule, addComponentsDir } from "@nuxt/kit";
+import { defineNuxtModule, createResolver, installModule, addComponentsDir } from "@nuxt/kit";
 import { name, version } from '../package.json'
 
 // Module options TypeScript interface definition
@@ -25,7 +25,13 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
     const runtimeDir = resolve('./runtime');
+
+    nuxt.options.build.transpile.push(runtimeDir)
+    nuxt.options.build.transpile.push('sass')
+
     nuxt.options.css.push(resolve(runtimeDir, 'assets', 'main.css'));
+    nuxt.options.css.push(resolve(runtimeDir, 'assets', 'theme.scss'));
+    await installModule('@nuxtjs/color-mode', { classSuffix: '' })
     await installModule('@nuxtjs/tailwindcss', {
       exposeConfig: true,
       config: {
@@ -43,6 +49,5 @@ export default defineNuxtModule<ModuleOptions>({
       prefix: "M",
       watch: false
     })
-    addPlugin(resolve('./runtime/plugin'))
   }
 })

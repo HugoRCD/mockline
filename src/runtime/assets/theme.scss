@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin theme($theme) {
+  @if $theme == 'light' {
+    html {
+      @apply light;
+    }
+  } @else if $theme == 'dark' {
+    html {
+      @apply dark;
+    }
+  }
+}
+
+:root {
+  .light-theme {
+    --color-bg: #F8F8F8;
+  }
+
+  .dark-theme {
+    --color-bg: #131113;
+  }
+}
