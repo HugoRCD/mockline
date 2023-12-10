@@ -6,7 +6,6 @@
   "license": "MIT",
   "type": "module",
   "author": "Hugo Richard",
-  "private": false,
   "contributors": [
     "Hugo Richard <hrichard206@gmail.com>"
   ],
