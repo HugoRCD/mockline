@@ -1,4 +1,18 @@
 
+## v0.0.7
+
+[compare changes](https://github.com/HugoRCD/mockline/compare/v0.0.4...v0.0.7)
+
+### 🏡 Chore
+
+- **release:** V0.0.5 ([b9ca662](https://github.com/HugoRCD/mockline/commit/b9ca662))
+- **release:** V0.0.5 ([eda4ee1](https://github.com/HugoRCD/mockline/commit/eda4ee1))
+- **release:** V0.0.6 ([d3afd89](https://github.com/HugoRCD/mockline/commit/d3afd89))
+
+### ❤️ Contributors
+
+- HugoRCD ([@HugoRCD](http://github.com/HugoRCD))
+
 ## v0.0.6
 
 [compare changes](https://github.com/HugoRCD/mockline/compare/v0.0.5...v0.0.6)
