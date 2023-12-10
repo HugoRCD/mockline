@@ -5,6 +5,7 @@
         Mockline
       </MButton>
       <MSwitch />
+      <MModal />
     </div>
   </div>
 </template>
