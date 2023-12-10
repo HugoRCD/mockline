@@ -5,9 +5,9 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "nuxt-svgo",
   ],
-  routeRules: {
+  /*routeRules: {
     "/": { isr: true, prerender: true },
-  },
+  },*/
   css: ["~/assets/main.scss"],
   colorMode: {
     preference: "dark",

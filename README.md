@@ -16,20 +16,20 @@ Visit https://mockline.hrcd.me to explore the documentation.
 
 ## Quick Setup
 
-1. Add `@nuxtjs/mockline` dependency to your project
+1. Add `mockline` dependency to your project
 
 ```bash
 # Using bun
-bun install -D @nuxtjs/mockline
+bun install -D mockline
 
 # Using pnpm
-pnpm add -D @nuxtjs/mockline
+pnpm add -D mockline
 
 # Using yarn
-yarn add --dev @nuxtjs/mockline
+yarn add --dev mockline
 
 # Using npm
-npm install --save-dev @nuxtjs/mockline
+npm install --save-dev mockline
 ```
 
 2. Add `@nuxtjs/mockline` to the `modules` section of `nuxt.config.ts`
@@ -37,7 +37,7 @@ npm install --save-dev @nuxtjs/mockline
 ```js
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/mockline'
+    'mockline'
   ]
 })
 ```
