@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.1
+
+[compare changes](https://github.com/HugoRCD/mockline/compare/v0.0.6...v0.0.1)
+
+### 🏡 Chore
+
+- **release:** V0.0.2 ([dc4c86d](https://github.com/HugoRCD/mockline/commit/dc4c86d))
+
+### ❤️ Contributors
+
+- HugoRCD ([@HugoRCD](http://github.com/HugoRCD))
+
 ## v0.0.2
 
 [compare changes](https://github.com/HugoRCD/mockline/compare/v0.0.6...v0.0.2)
