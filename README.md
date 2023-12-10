@@ -1,58 +1,48 @@
-<!--
-Get your module up and running quickly.
+# Mockline
 
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
--->
+Fully styled and customizable components for Nuxt, powered Tailwind CSS.
 
-# My Module
-
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
-
-My new Nuxt module for doing amazing things.
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+Documentation
+Visit https://mockline.hrcd.me to explore the documentation.
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- **Fully customizable**: All components are customizable via props and slots.
+- **Lightweight**: No external CSS file. All styles are generated via Tailwind CSS.
+- **Fully typed**: Written in TypeScript with predictable static types.
+- **Developer friendly**: Fully documented and easy to contribute.
+- **SSR**: Server-side rendering supported.
+- **Dark mode**: Dark mode supported.
 
 ## Quick Setup
 
-1. Add `my-module` dependency to your project
+1. Add `@nuxtjs/mockline` dependency to your project
 
 ```bash
+# Using bun
+bun install -D @nuxtjs/mockline
+
 # Using pnpm
-pnpm add -D my-module
+pnpm add -D @nuxtjs/mockline
 
 # Using yarn
-yarn add --dev my-module
+yarn add --dev @nuxtjs/mockline
 
 # Using npm
-npm install --save-dev my-module
+npm install --save-dev @nuxtjs/mockline
 ```
 
-2. Add `my-module` to the `modules` section of `nuxt.config.ts`
+2. Add `@nuxtjs/mockline` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    'my-module'
+    '@nuxtjs/mockline'
   ]
 })
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+That's it! You can now use Mockline in your Nuxt app ✨
 
 ## Development
 
@@ -79,16 +69,3 @@ npm run test:watch
 # Release new version
 npm run release
 ```
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/my-module
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/my-module
-
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/my-module
-
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
-[nuxt-href]: https://nuxt.com

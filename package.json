@@ -1,10 +1,14 @@
 {
-  "name": "nuxt-mockline",
+  "name": "@nuxtjs/mockline",
   "version": "0.0.4",
   "description": "Mockline is a premium UI Kit for Nuxt.js based on TailwindCSS. It provides a set of organized tools, patterns & practices which work as the foundation for your application development.",
-  "repository": "https://github.com/HugoRCD/mockline",
+  "repository": "HugoRCD/mockline",
   "license": "MIT",
   "type": "module",
+  "author": "Hugo Richard",
+  "contributors": [
+    "Hugo Richard <hrichard206@gmail.com>"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
@@ -16,6 +20,17 @@
   "types": "./dist/types.d.ts",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "nuxt",
+    "typescript",
+    "ui",
+    "mockline",
+    "tailwindcss",
+    "vue",
+    "components",
+    "vue-component",
+    "library"
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",

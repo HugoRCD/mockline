@@ -7,20 +7,14 @@ export interface ModuleOptions {
    * @default 'M'
    */
   prefix?: string
-
-  /**
-   * @default false
-   */
-  global?: boolean
 }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name,
     version,
-    configKey: 'mockline',
+    configKey: '@nuxtjs/mockline',
     compatibility: {
-      // Semver version of supported nuxt versions
       nuxt: '^3.0.0'
     }
   },
@@ -31,7 +25,8 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
     const runtimeDir = resolve('./runtime');
-    nuxt.options.css.push(resolve('./runtime/style.css'));
+    nuxt.options.css.push(resolve(runtimeDir, 'assets', 'style.css'));
+    nuxt.options.css.push(resolve('./runtime/assets/main.scss'));
     await installModule('@nuxtjs/tailwindcss', {
       exposeConfig: true,
       config: {
