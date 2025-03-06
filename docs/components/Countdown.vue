@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const endDate = new Date("2024-12-30")
+const endDate = new Date("2025-04-30")
 
 type CountdownItem = {
   name: string
